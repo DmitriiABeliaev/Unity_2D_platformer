@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float runSpeed = 100f;
     private bool jump = false;
-    private bool crouch = false;
+    private bool standing = false;
 
     void Update()
     {
@@ -21,19 +21,21 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
 
-        if(Input.GetButtonDown("Crouch"))
+        //Debug.Log(Input.GetKey("down") || Input.GetKey("s"));
+        
+        if(Input.GetKey("down") || Input.GetKey("s"))
         {
-            crouch = true;
+            standing = true;
         }
-        else if(Input.GetButtonUp("Crouch"))
+        else
         {
-            crouch = false;
+            standing = false;
         }
     }
 
     void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, standing, jump);
         jump = false;
 
     }
