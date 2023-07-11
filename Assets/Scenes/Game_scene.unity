@@ -5174,6 +5174,7 @@ GameObject:
   - component: {fileID: 502760354}
   - component: {fileID: 502760359}
   - component: {fileID: 502760360}
+  - component: {fileID: 502760362}
   m_Layer: 6
   m_Name: player
   m_TagString: Player
@@ -5401,6 +5402,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.96181655, y: 0.7045113}
   m_EdgeRadius: 0
+--- !u!114 &502760362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502760353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccc61d0ea98f7c43bc2de521f8c53dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504443696
 GameObject:
   m_ObjectHideFlags: 0
@@ -5807,7 +5820,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &916724268
 GameObject:
@@ -6253,7 +6266,7 @@ RectTransform:
   - {fileID: 1217266251}
   - {fileID: 4219793}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
