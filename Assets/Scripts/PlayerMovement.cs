@@ -55,13 +55,4 @@ public class PlayerMovement : MonoBehaviour
         jump = false;
 
     }
-
-    private void onTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Trigger");
-        if(other.gameObject.CompareTag("Gems"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
 }
