@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TMP_Text text;
-    [SerializeField] int score = 0; 
+    [SerializeField] private int score = 0; 
 
     // Start is called before the first frame update
     void Awake()
@@ -29,5 +29,10 @@ public class ScoreManager : MonoBehaviour
     {
         score += coinValue;
         text.text = " " + score.ToString();
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }
